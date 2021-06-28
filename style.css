@@ -34,6 +34,25 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
   margin: 50px;
 }
+.left_side .download_icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 33px;
+  height: 33px;
+  background: #03a9f4;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5%;
+  padding: 2px;
+  padding-top: 4px;
+}
+.left_side .download_icon a img {
+  height: 30px;
+  position: sticky;
+}
 .container .left_side {
   position: relative;
   background: #003147;
@@ -103,7 +122,7 @@ body {
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   color: #fff;
 }
 .contactInfo ul {
@@ -125,6 +144,9 @@ body {
   color: #fff;
   font-weight: 300;
   font-size: 15px;
+}
+.contactInfo ul li .text a {
+  color: #fff;
 }
 /* .contactInfo ul li .text:nth-child(2) {
   text-overflow: clip;
