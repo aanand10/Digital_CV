@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  /* background: lightblue; */
+  background: lightblue; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #c6ffff,
+    #3aa6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #c6ffff, #3aa6ff);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* width: 100%; */
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  margin: 50px;
+}
+.container .left_side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: white;
+}
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+  /* color: #fff;
+  /* font-family: monospace; */
+  /* overflow: hidden; Ensures the content is not revealed until the animation */
+  /* border-right: 0.15em solid orange; The typwriter cursor */
+  /* white-space: nowrap; Keeps the content on a single line */
+  /* margin: 0 auto; Gives that scrolling effect as the typing happens */
+  /* letter-spacing: 0.15em; Adjust as needed */
+  /* animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite; */
+
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  /* font-size: 180%; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+.profileText h2 .contactInfo {
+  padding-top: 40px;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.contactInfo ul {
+  position: relative;
+}
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 5px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 18px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li .text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 15px;
+}
+.contactInfo ul li .text:nth-child(2) {
+  /* text-overflow: clip; */
+  font-size: 13px;
+}
+
+.contactInfo.Education ul li {
+  margin-bottom: 15px;
+}
+.contactInfo.Education ul li h5 {
+  color: #03a9f4;
+  font-weight: 500;
+}
+
+.contactInfo.Education ul li h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.Education ul li h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+.title_underline {
+  width: 40%;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  border: 0px solid transparent;
+  border-top: 2px solid #03a9f4;
+}
+.contactInfo.Education.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: gray;
+  display: block;
+}
+.contactInfo.Education.language .percent div {
+  height: 100%;
+  background-color: #03a9f4;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* styling of right side starts here  */
+
+.container .right_side {
+  position: relative;
+  background: #fff;
+  padding: 40px;
+}
+.about {
+  margin-bottom: 50px;
+}
+.about:last-child {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.title_underline.about_title_underline {
+  margin-top: -13px;
+  width: 15%;
+}
+.right_side .about p {
+  color: #333;
+}
+.about .box {
+}
+.about .box .project_box {
+  padding: 5px 8px;
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.about .box .project_box .year_company {
+  min-width: 150px;
+}
+.about .box .project_box .year_company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+.about .box .text .project_box h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+  /* font-weight: 500; */
+}
+.about .box .project_box:nth-child(odd) {
+  background: rgba(185, 185, 185, 0.25);
+}
+
+/* skills section  */
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.skills .box h4 {
+  color: #848c99;
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.intrest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.intrest ul li {
+  list-style-type: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+.intrest ul li .fa {
+  color: #03a9f4;
+  font-size: 18px;
+  width: 20px;
+}
+/* .intrest ul li i:nth-child(1) {
+  display: inline-block;
+  width: 18px;
+  font-size: 18px;
+  color: #03a9f4;
+} */
+
+/* The typing effect */
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+} */
+/* The typewriter cursor effect
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+} */
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 230, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .intrest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .about .box .project_box {
+    flex-direction: column;
+  }
+  .about .box .year_company {
+    /* min-width: 150px; */
+    margin-bottom: 5px;
+  }
+  .intrest ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .skills .box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
