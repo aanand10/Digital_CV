@@ -126,10 +126,10 @@ body {
   font-weight: 300;
   font-size: 15px;
 }
-.contactInfo ul li .text:nth-child(2) {
-  /* text-overflow: clip; */
+/* .contactInfo ul li .text:nth-child(2) {
+  text-overflow: clip;
   font-size: 13px;
-}
+} */
 
 .contactInfo.Education ul li {
   margin-bottom: 15px;
