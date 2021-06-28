@@ -148,6 +148,7 @@ body {
 .contactInfo ul li .text a {
   color: #fff;
   text-decoration: none;
+  text-decoration-color: transparent;
 }
 /* .contactInfo ul li .text:nth-child(2) {
   text-overflow: clip;
