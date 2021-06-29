@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+a {
+  /* color: inherit; */
+  text-decoration: none;
+}
 body {
   /* background: lightblue; */
   background: lightblue; /* fallback for old browsers */
