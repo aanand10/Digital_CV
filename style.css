@@ -234,6 +234,7 @@ body {
   text-transform: uppercase;
   color: #848c90;
   font-weight: 600;
+  padding-top: 3px;
 }
 .about .box .text .project_box h4 {
   text-transform: uppercase;
@@ -350,8 +351,15 @@ body {
   }
 }
 @media (max-width: 600px) {
+  .container .left_side {
+    padding: 40px 25px;
+  }
+  .container .right_side {
+    padding: 40px 25px;
+  }
   .about .box .project_box {
     flex-direction: column;
+    padding: 10px 10px;
   }
   .about .box .year_company {
     /* min-width: 150px; */
