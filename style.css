@@ -29,8 +29,9 @@ body {
 }
 .container {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   max-width: 1000px;
+  /* max-width: min(100px, 90%); */
   min-height: 1000px;
   background: #fff;
   display: grid;
@@ -254,7 +255,7 @@ body {
 .about.skills {
   /* background-color: ; */
 }
-.skills .box {
+/* .skills .box {
   position: relative;
   width: 100%;
   display: grid;
@@ -279,7 +280,7 @@ body {
   left: 0;
   height: 100%;
   background: #03a9f4;
-}
+} */
 
 .skills .skills--names {
   display: flex;
@@ -288,11 +289,15 @@ body {
   padding: 1em;
   padding-left: 0px;
   align-items: flex-start;
+  border: 1px solid red;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .skills .skills--names h4 {
   color: #f0f0f0;
   padding: 0.5em 0.7em;
-  margin-right: 1em;
+  margin: 0.5em 0.2em;
+
   background-color: #3aa6ff;
   background: -webkit-linear-gradient(
     to right,
@@ -300,6 +305,8 @@ body {
     #3aa6ff
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #38ffff, #368fd8);
+  background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
   border-radius: 0.5em;
   -webkit-border-radius: 0.5em;
   -moz-border-radius: 0.5em;
