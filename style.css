@@ -183,19 +183,19 @@ body {
   border: 0px solid transparent;
   border-top: 2px solid #03a9f4;
 }
-.contactInfo.Education.language .percent {
-  position: relative;
+.contactInfo.Education.language ul li {
+  /* position: relative; */
   width: 100%;
-  height: 6px;
-  background: gray;
-  display: block;
+  /* height: 6px; */
+  /* background: gray; */
+  display: flex;
+  flex-direction: column;
 }
-.contactInfo.Education.language .percent div {
-  height: 100%;
-  background-color: #03a9f4;
-  position: absolute;
-  top: 0;
-  left: 0;
+.contactInfo.Education.language ul li span {
+  font-weight: 500;
+}
+.contactInfo.Education.language ul li p {
+  color: #848c90;
 }
 
 /* styling of right side starts here  */
@@ -248,40 +248,18 @@ body {
   /* font-weight: 500; */
 }
 .about .box .project_box:nth-child(odd) {
-  background: rgba(185, 185, 185, 0.25);
+  background: #b9b9b925;
+  border-radius: 0.5em;
+  /* background-color: #b9b9b9;
+  opacity: 0.8;
+  background-image: radial-gradient(#ffffff 0.5px, #b9b9b9 0.5px);
+  background-size: 10px 10px; */
 }
 
-/* skills section  */
+/*======================= skills section =========================== */
 .about.skills {
   /* background-color: ; */
 }
-/* .skills .box {
-  position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-.skills .box h4 {
-  color: #ffffff;
-  font-weight: 500;
-}
-.skills .box .percent {
-  position: relative;
-  width: 100%;
-  height: 10px;
-  background: #f0f0f0;
-}
-.skills .box .percent div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background: #03a9f4;
-} */
-
 .skills .skills--names {
   display: flex;
   width: 100%;
@@ -297,13 +275,9 @@ body {
   color: #f0f0f0;
   padding: 0.5em 0.7em;
   margin: 0.5em 0.2em;
-
   background-color: #3aa6ff;
-  background: -webkit-linear-gradient(
-    to right,
-    #c6ffff,
-    #3aa6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #c6ffff, #3aa6ff);
+  /*Chrome10-25,Safari5.1-6*/
   background: linear-gradient(to right, #38ffff, #368fd8);
   background-color: #29539b;
   background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%);
@@ -312,6 +286,11 @@ body {
   -moz-border-radius: 0.5em;
   -ms-border-radius: 0.5em;
   -o-border-radius: 0.5em;
+  /* border: 2px solid;
+  border-image-slice: 1;
+  border-width: 0.2em;
+
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d); */
 }
 /*=========== intrest section ============ */
 .intrest.forMobile {
@@ -429,7 +408,7 @@ body {
     /* font-size: 15px; */
   }
   .container .right_side {
-    padding: 40px 25px;
+    padding: 40px 20px;
   }
   .about .box .project_box {
     flex-direction: column;
