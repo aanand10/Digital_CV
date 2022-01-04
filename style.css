@@ -289,7 +289,7 @@ body {
   padding: 1em;
   padding-left: 0px;
   align-items: flex-start;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
