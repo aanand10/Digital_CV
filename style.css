@@ -232,7 +232,7 @@ body {
   margin: 20px 0;
 }
 .about .box .project_box .year_company {
-  min-width: 150px;
+  min-width: 178px;
 }
 .about .box .project_box .year_company h5 {
   text-transform: uppercase;
@@ -251,6 +251,9 @@ body {
 }
 
 /* skills section  */
+.about.skills {
+  /* background-color: ; */
+}
 .skills .box {
   position: relative;
   width: 100%;
@@ -261,7 +264,7 @@ body {
   margin-top: 10px;
 }
 .skills .box h4 {
-  color: #848c99;
+  color: #ffffff;
   font-weight: 500;
 }
 .skills .box .percent {
@@ -278,7 +281,32 @@ body {
   background: #03a9f4;
 }
 
-/* intrest section  */
+.skills .skills--names {
+  display: flex;
+  width: 100%;
+  /* border: 1px solid hotpink; */
+  padding: 1em;
+  padding-left: 0px;
+  align-items: flex-start;
+}
+.skills .skills--names h4 {
+  color: #f0f0f0;
+  padding: 0.5em 0.7em;
+  margin-right: 1em;
+  background-color: #3aa6ff;
+  background: -webkit-linear-gradient(
+    to right,
+    #c6ffff,
+    #3aa6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #38ffff, #368fd8);
+  border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  -moz-border-radius: 0.5em;
+  -ms-border-radius: 0.5em;
+  -o-border-radius: 0.5em;
+}
+/*=========== intrest section ============ */
 .intrest.forMobile {
   display: none;
 }
