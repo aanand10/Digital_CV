@@ -383,8 +383,13 @@ body {
 
 @media screen and (max-width: 600px) {
   .container {
+    border-radius: 1em;
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
   }
   .intrest ul {
     grid-template-columns: repeat(2, 1fr);
